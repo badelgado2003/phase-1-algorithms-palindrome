@@ -1,9 +1,19 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  // Write a function to where if the input is a palindrome then it will return true if not then it will return false
+  const length = word.length;
+  for (let w = 0; w < length/2; w++) {
+    if (word[w] !== word[length - 1 - w]) {
+      return false
+    }
+  }
+  return true
 }
 
 /* 
-  Add your pseudocode here
+  function
+    inside function
+    if the string that is provided is a palindrome the function will return true
+    else the function will return false  
 */
 
 /*
